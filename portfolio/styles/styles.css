@@ -1,0 +1,386 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Libre Franklin", sans-serif;
+}
+footer{
+    color: #000;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.header-block {
+	height: 100vh;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(198, 108, 73, 0.30);
+}
+
+
+.icons {
+	color: #fff;
+}
+
+
+
+.d-flex {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+}
+
+/* Основний контейнер для логотипу і меню */
+.content-wrap {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100px; 
+}
+h1{
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 77.57px;
+	text-align: left;
+	color: #ffffff;
+    margin: 150px 0 0 200px;
+
+}
+.p{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29.09px;
+	text-align: left;
+	color: #fff;
+    margin: 50px 0 0 200px;
+}
+
+.a{
+	color: #fff;
+    margin: 120px 0 0 200px;
+}
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul li {
+    margin-bottom: 10px;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block; /* Forces each link to appear on a new line */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info p:first-child {
+    margin-top: 0;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+h2{
+    font-size: 24px;
+    line-height: 29.09px;
+    text-align: left;
+    margin: 90px 0 90px 0 ;
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+
+}
+.container {
+    padding: 0 15px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    margin-bottom: 90px;
+    padding: 0 20px;
+}
+
+.logo {
+    order: 0;
+    font-size: 1.5rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.09px;
+    color: #fff;
+    text-align: left;
+    padding: 0; 
+    margin: 0; 
+}
+
+.menu-list {
+    display: flex; 
+    margin-left: auto; 
+    align-items: center; 
+    padding: 0; 
+}
+
+.menu-list li {
+    margin-right: 20px; 
+}
+
+.menu-list li:last-child {
+    margin-right: 0; 
+}
+.three-columns {
+    display: flex;
+    gap: 20px; 
+}
+
+.column {
+    flex: 1; 
+}
+.column:first-child {
+    flex: 2; 
+}
+.column:last-child {
+    flex: 2; 
+}
+.column1{
+    flex: 2;
+}
+.column1:first-child{
+    flex: 1,8;
+}
+.three-columns1 {
+    display: flex;
+    gap: 20px; 
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.position {
+    margin-bottom: 0; 
+}
+h3 {
+    margin-bottom: 30px;
+}
+
+.img{
+    width: 350px;
+}
+.img1{
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;    
+}
+.img2{
+    width: 350px;
+    height: auto;
+    margin-bottom: 10px;    
+}
+.color{
+    background: #FFFAF2;
+    padding: 90px;
+}
+.progress-bar {
+    background-color: #FBE7D2;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.progress {
+    background-color: #C46B43;
+    height: 100%;
+    border-radius: 5px;
+}
+.ol{
+    color: #000;
+}
+.menu-list a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Libre Franklin", sans-serif;
+    line-height: 21.82px;
+    margin-right: 20px;
+    padding: 0; 
+    margin: 0; 
+}
+
+@media screen and (min-width: 800px) {
+    .icons {
+        display: none;
+    }
+    .hide-menu {
+        position: static;
+    }
+    .menu-list {
+        background: transparent;
+    }
+}
+
+
+.column ul, .column .contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px; 
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block; 
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .header-block {
+        height: 80vh;
+    }
+    .container {
+        margin-bottom: 60px;
+        padding: 0;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 24.24px;
+        text-align: center;
+        margin: 150px 0 0 0;
+
+    
+    }
+    h2{
+        text-align: center;
+        margin: 60px 0;
+    }
+    p{
+        font-size: 12px;
+        line-height: 14.54px;
+        padding: 0 20px;
+
+    }
+    .p{
+        text-align: center ;
+        font-size: 13px;
+        line-height: 15.76px;
+        margin: 50px 0 0 0;
+    }
+    .a{
+        text-align: center;
+        font-size: 13px;
+        line-height: 15.76px;
+        margin: 50px 0 0 0;
+    }
+    .img {
+        width: 220px; 
+        display: block; 
+        margin: 0 auto; 
+    }
+    
+
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+
+    }
+    .img1{
+        width: 170px;
+        margin-bottom: 5px;    
+    }
+    .img2{
+        width: 240px;
+        margin-bottom: 5px;    
+    }
+    .two-column {
+        display: flex;
+        gap: 20px; 
+    }
+    .c-position {
+        flex: 1;
+    }
+    .c-position:first-child {
+        position: absolute; 
+        padding: 10px;
+    }
+    .c-position:last-child {
+        flex: 2; 
+        position: relative;
+    }
+    .position{
+        margin-top: 250px;
+
+        white-space: nowrap;
+    }
+    .p2{
+        margin-left: 20px;
+    }
+    h3{
+        white-space: nowrap;
+    }
+    .progress-bar {
+        height:15px;
+        margin: 25px 0;
+
+    }
+}
