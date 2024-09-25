@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        li {
+            margin: 5px 0;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My shopping List</h1>
+    
+    <p>Enter a new item 
+    <input type="text" id="input" placeholder="Enter item" />
+    <button id="add"> Item</button></p>
+
+    <ul id="list"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const add = document.getElementById("add");
+            const input = document.getElementById("input");
+            const list = document.getElementById("list");
+
+            add.addEventListener("click", () => {
+                const text = input.value;
+
+                if (text !== "") {
+                    addItem(text);
+                    input.value = ""; 
+                    input.focus(); 
+                }
+            });
+
+            function addItem(text) {
+                const item = document.createElement("li");
+                const span = document.createElement("span");
+                span.textContent = text;
+                
+                const edit = document.createElement("button");
+                edit.textContent = "Edit";
+                edit.addEventListener("click", () => Edit(item, span));
+
+                const del = document.createElement("button");
+                del.textContent = "Delete";
+                del.addEventListener("click", () => Delete(item));
+
+                item.appendChild(span);
+                item.appendChild(edit);
+                item.appendChild(del);
+                list.appendChild(item);
+            }
+
+            function Edit(item, span) {
+                const newText = prompt("Edit item:", span.textContent);
+
+                if (newText !== null && newText !== "") {
+                    span.textContent = newText;
+                    input.focus();
+                }
+            }
+
+            function Delete(item) {
+                if (confirm("Are you sure you want to delete this item?")) {
+                    item.remove();
+                    input.focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
